@@ -8,12 +8,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
 
   </head>
   <body>
-	<div class="container">
-		<h1>Dinner planner</h1>
-		<div id="exampleView">
+ <nav class="navbar navbar-default" role="navigation" style="height:20px;">
+		<div class="container">
+		<p class="lead" style="padding-top:8px;"> Dinner planner </p>
+	</div>
+ </nav>	
+	<!-- <div class="container">
+		<div id="exampleView" style="display:none;">
 			<div>
 				Number of guest <span id="numberOfGuests"></span>
 			</div>
@@ -21,9 +26,44 @@
 				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
 			    <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
 			</div>
-		</div>
+		</div> -->
+		
+ <!-- Home View -->	
+		<div id="homeView">
+			<div class="container">
+			<h1>A Home Dinner Service</h1>
+			<button id="createDinner" class="btn">Create new dinner</button>
+		</div></div>
 	</div>
 
+		
+ <!-- Select dish View -->	
+ <div id="selectDishView" style="display:none;">
+	 <div class="container">
+		 <div class="col-xs-6 col-sm-3">
+ 			<div>
+ 				Number of guest <span id="numberOfGuests"></span>
+ 			</div>
+ 			<div>
+ 				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+ 			    <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
+ 			</div>
+			<p style="text-align:left;">Dish Name
+			<span style="float: right;">Cost</span></p>
+ 		</div>
+		
+		<div class="col-xs-6 col-sm-3">
+		    <h3>Select Dish</h3>
+ 			<div id="allDishes">
+ 			</div>
+		</div>
+		
+		
+    </div> 
+ </div> 
+ 
+ 
+ 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
@@ -32,7 +72,14 @@
 	<!-- The application JavaScript code -->
 	<script src="js/app.js"></script>
 	<script src="js/model/dinnerModel.js"></script>
+
+	<script src="js/view/homeView.js"></script>
+	
 	<script src="js/view/exampleView.js"></script>
 	<script src="js/view/exampleViewController.js"></script>
+	
+	<script src="js/view/selectDishView.js"></script>
+	<script src="js/view/selectDishViewController.js"></script>
+	
   </body>
 </html>

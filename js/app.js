@@ -7,5 +7,12 @@ $(function() {
 	
 	//And create the needed controllers and views
 	var exampleView = new ExampleView($("#exampleView"),model);
-   	var exampleViewController = new ExampleViewController(exampleView,model);
+	var exampleViewController = new ExampleViewController(exampleView,model);
+	
+	//Select Dish controllers and views
+	var selectDishView = new SelectDishView($("#selectDishView"),model);
+	var selectDishViewController = new SelectDishViewController(selectDishView,model);
+	
+	
+	
 });
