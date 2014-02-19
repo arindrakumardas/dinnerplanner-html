@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Basic Drawing App</title>
+    <title>Homelette | Dinner Planner App</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
 
   </head>
   <body>
- <nav class="navbar navbar-default" role="navigation" style="height:20px;">
-		<div class="container">
-		<p class="lead" style="padding-top:8px;"> Dinner planner </p>
-	</div>
- </nav>	
+ 	<nav class="navbar navbar-default navbar-fixed-to-top" role="navigation">
+ 		<div class = "page-header">
+ 			<h1 class="lead"><a href = "index.html" class = "navbar-home">HOMELETTE</a> <smaller class="sublead">  From the best chefs in the world directly into your kitchen</smaller></h1>
+ 		</div>
+ 	</nav>	
 	<!-- <div class="container">
 		<div id="exampleView" style="display:none;">
 			<div>
@@ -30,19 +30,23 @@
 		
  <!-- Home View -->	
 		<div id="homeView">
-			<div class="container">
-			<h1>A Home Dinner Service</h1>
-			<button id="createDinner" class="btn">Create new dinner</button>
-		</div></div>
-	</div>
+			<div class="jumbotron">
+				<h3 class="header">A Home Dinner Service</h3>
+				<p class="intro"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt odio a mi vulputate viverra. Aliquam et condimentum ipsum, sed hendrerit elit. </h4></p>
+			<br>
+			<br>
+				<p class="intro"><h4>Get started here:</h4></p>
+				<button id="createDinner" class="btn btn-primary btn-lg" role="button">Create new dinner</button>
+			</div>
+		</div>
 
 		
- <!-- Select dish View -->	
- <div id="selectDishView" style="display:none;">
+ <!-- Sidebar View -->	
+ <div id="sidebar" style="display:none;">
 	 <div class="container">
-		 <div class="col-xs-6 col-sm-3">
+		 <div class="sidebar col-xs-6 col-sm-3">
  			<div>
- 				Number of guest <span id="numberOfGuests"></span>
+ 				Number of guests: <span id="numberOfGuests"></span>
  			</div>
  			<div>
  				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
@@ -50,8 +54,10 @@
  			</div>
 			<p style="text-align:left;">Dish Name
 			<span style="float: right;">Cost</span></p>
+			<button id="confirmButton" class="btn btn-default">Confirm Dinner</button>
  		</div>
-		
+</div>
+<div id="searchbar">
 		<div class="col-xs-6 col-sm-3">
 		    <h3>Select Dish</h3>
  			<div id="allDishes">
@@ -61,7 +67,34 @@
 		
     </div> 
  </div> 
- 
+
+  <!-- ****************************** -->
+  <!-- Select dish View -->	
+  <!-- ******************************
+  <div id="selectDishView" style="display:none;">
+	 <div class="container">
+		 <div class="sidebar col-xs-6 col-sm-3">
+ 			<div>
+ 				Number of guests: <span id="numberOfGuests"></span>
+ 			</div>
+ 			<div>
+ 				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+ 			    <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
+ 			</div>
+			<p style="text-align:left;">Dish Name
+			<span style="float: right;">Cost</span></p>
+			<button id="confirmButton" class="btn btn-default">Confirm Dinner</button>
+ 		</div>
+		
+		<div class="searchbar col-xs-6 col-sm-3">
+		    <h3>Select Dish</h3>
+ 			<div id="allDishes">
+ 			</div>
+		</div>
+		
+    </div> 
+ </div> 
+*******************************************  -->
  
  
     <!-- jQuery -->

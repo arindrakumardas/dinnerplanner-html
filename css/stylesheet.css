@@ -1,10 +1,36 @@
+a:link{
+	text-decoration: none;
+}
+.sidebar{
+	border-right: inset;
+}
+#homeView {
+	background: url('images/bg.jpg');
+	background-size: 1440px 800px;
+	background-repeat: no-repeat;
+}
+.jumbotron {
+	border-radius: 10px;
+}
+.lead {
+	font-family: Helvetica, sans-serif;
+	font-size: 40px;
+	padding-left: 40px;
+}
+.navbar {
+	height: 8%;
+}
 .side-container {
 	padding: 9px 0;
 	    left:20px;
 	    top:60px;
 	    width:20%;
 }
+.sublead {
+	font-size: 20px;
+	font-style: italic;
 
+}
 .text-primary {
 	padding-left:100px;
 	
