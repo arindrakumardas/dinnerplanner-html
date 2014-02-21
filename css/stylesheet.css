@@ -1,6 +1,9 @@
 a:link{
 	text-decoration: none;
 }
+#sidebarView {
+	border-right: inset;
+}
 #homeView {
 	background: url('images/bg.jpg');
 	background-size: 1440px 800px;
@@ -18,8 +21,9 @@ a:link{
 .navbar {
 	height: 8%;
 }
-.sidebar{
-	border-right: inset;
+#searchbar {
+	display: block;
+	background-color: #FFFF99;
 }
 .side-container {
 	padding: 9px 0;
@@ -27,12 +31,16 @@ a:link{
 	    top:60px;
 	    width:20%;
 }
+
 .sublead {
 	font-size: 20px;
 	font-style: italic;
 
 }
+
 .text-primary {
-	padding-left:100px;
-	
+	padding-left:100px;	
+}
+thead {
+	text-decoration: bold;
 }
