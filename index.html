@@ -34,7 +34,7 @@
 			<div class="container-fluid">
 			<div class="jumbotron">
 				<h3 class="header">A Home Dinner Service</h3>
-				<p class="intro"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>nam tincidunt odio a mi vulputate viverra.<br>Aliquam et condimentum ipsum, sed hendrerit elit. </h4></p>
+				<p class="intro"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>nam tincidunt odio a mi vulputate viverra.<br>Aliquam et condimentum ipsum, sed hendrerit elit. </h5></p>
 			<br>
 			<br>
 				<p class="intro"><h4>Get started here:</h4></p>
@@ -54,20 +54,35 @@
  				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
  			    <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
  			</div>
-			<p style="text-align:left;">Dish Name
-			<span style="float: right;">Cost</span></p>
+ 			<table class="table">
+ 				<thead>
+ 					<th>Dish Name</th>
+ 					<th>Cost</th>
+ 				</thead>
+ 				<tbody>
+ 					<tr>
+ 					<!-- *******************************************
+			  		 @TODO: Enter dynamic list with selections here 
+			 		 ******************************************** -->
+			 		</tr>
+ 				</tbody>
+ 			</table>
 			<button id="confirmButton" class="btn btn-default">Confirm Dinner</button>
  		</div>
-</div>
+	 </div>
+ </div>
+
+ <!-- Select dish view -->
 <div id="searchbar">
-		<div class="col-xs-6 col-sm-3">
-		    <h3>Select Dish</h3>
- 			<div id="allDishes">
+		<div class="container">
+			<div class="col-xs-6 col-xs-offset-3">
+		    	<h3>Select Dish</h3>
+ 				<div id="allDishes">
+ 				</div>
  			</div>
 		</div>
 		
 		
-    </div> 
  </div> 
 
   <!-- ****************************** -->

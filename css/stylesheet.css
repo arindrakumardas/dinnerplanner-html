@@ -1,14 +1,12 @@
 a:link{
 	text-decoration: none;
 }
-.sidebar{
-	border-right: inset;
-}
 #homeView {
 	background: url('images/bg.jpg');
 	background-size: 1440px 800px;
 	background-repeat: no-repeat;
 }
+
 .jumbotron {
 	border-radius: 10px;
 }
@@ -19,6 +17,9 @@ a:link{
 }
 .navbar {
 	height: 8%;
+}
+.sidebar{
+	border-right: inset;
 }
 .side-container {
 	padding: 9px 0;
