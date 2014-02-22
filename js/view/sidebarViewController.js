@@ -8,4 +8,10 @@ var SidebarViewController = function(view, model ) {
 	view.minusButton.click(function(){
 		model.setNumberOfGuests(model.getNumberOfGuests() - 1);
 	});
+	view.confirmButton.click(function(){
+		$('#selectDishView').hide();
+		$('#homeView').hide();
+		$('#seidebarView').hide();
+		$('#numGuestsView').show();
+	});
 }

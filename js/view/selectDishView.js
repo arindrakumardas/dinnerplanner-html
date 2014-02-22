@@ -6,7 +6,7 @@ var SelectDishView = function (container,model) {
 	this.numberOfGuests = container.find("#numberOfGuests");
 	this.plusButton = container.find("#plusGuest");
 	this.minusButton = container.find("#minusGuest");
-	this.confirmButton = container.find("#confirmButton");
+	
 	//Creating the components dynamically. Here we create the following HTML content:
 	//
 	// <div class="row">

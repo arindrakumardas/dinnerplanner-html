@@ -7,6 +7,7 @@
 		this.plusButton = container.find("#plusGuest");
 		this.minusButton = container.find("#minusGuest");
 		this.div = container.find("#sidebarView");
+		this.confirmButton = container.find("#confirmButton");
 		//Creating the components dynamically. Here we create the following HTML content:
 		//
 		// <div class="row">
