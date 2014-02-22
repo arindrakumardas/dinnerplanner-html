@@ -11,7 +11,7 @@ var SidebarViewController = function(view, model ) {
 	view.confirmButton.click(function(){
 		$('#selectDishView').hide();
 		$('#homeView').hide();
-		$('#seidebarView').hide();
+		$('#sidebarView').hide();
 		$('#numGuestsView').show();
 	});
 }
