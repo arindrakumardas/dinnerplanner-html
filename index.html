@@ -12,11 +12,12 @@
 
   </head>
   <body>
- <nav class="navbar navbar-default" role="navigation" style="height:20px;">
-		<div class="container">
-		<p class="lead" style="padding-top:8px;"> Dinner planner </p>
-	</div>
- </nav>	
+ <nav class="navbar navbar-default navbar-fixed-to-top" role="navigation">
+ 		<div class="container">
+ 		<div class = "page-header">
+ 			<h1 class="lead"><a href = "index.html" class = "navbar-home">HOMELETTE</a> <smaller class="sublead">  From the best chefs in the world directly into your kitchen</smaller></h1>
+ 		</div></div>
+ 	</nav>	
 	<!-- <div class="container">
 		<div id="exampleView" style="display:none;">
 			<div>
@@ -30,38 +31,98 @@
 		
  <!-- Home View -->	
 		<div id="homeView">
-			<div class="container">
-			<h1>A Home Dinner Service</h1>
-			<button id="createDinner" class="btn">Create new dinner</button>
-		</div></div>
-	</div>
-
+			<div class="container-fluid">
+			<div class="jumbotron">
+				<h3 class="header">A Home Dinner Service</h3>
+				<p class="intro"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>nam tincidunt odio a mi vulputate viverra.<br>Aliquam et condimentum ipsum, sed hendrerit elit. </h5></p>
+			<br>
+			<br>
+				<p class="intro"><h4>Get started here:</h4></p>
+				<button id="createDinner" class="btn btn-primary btn-lg" role="button">Create new dinner</button>
+			</div></div>
+		</div>
 		
- <!-- Select dish View -->	
+<!-- Sidebar View -->
  <div id="selectDishView" style="display:none;">
-	 <div class="container">
+	 
 		 <div class="col-xs-6 col-sm-3">
  			<div>
- 				Number of guest <span id="numberOfGuests"></span>
+ 				Number of guests: <span id="numberOfGuests"></span>
  			</div>
+
  			<div>
  				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
  			    <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
  			</div>
-			<p style="text-align:left;">Dish Name
-			<span style="float: right;">Cost</span></p>
+
+ 			<table class="table" id="menu-table">
+ 				<thead>
+ 					<th>Dish Name</th>
+ 					<th>Cost</th>
+ 				</thead>
+ 				<tbody class="table-striped">
+ 					<tr>
+ 						<td>Pending</td>
+ 						<td>0.00</td>
+<!--  				*******************************************
+			  		 @TODO: Enter dynamic list with selections here 
+			 		 ********************************************
+ -->			 		</tr>
+			 		<tr>
+			 			<td id="total" style="text-align:right">SEK</td>
+ 						<td>0.00</td>
+ 					</tr>
+ 				</tbody>
+ 			</table>
+
+ 			<div><span></span></div>
+			
+			<button id="confirmButton"class="btn btn-primary btn-lg" role="button">Confirm Dinner</button>
  		</div>
+ </div>
+
+ <!-- Select dish view -->
+<div class="col-md-offset-3" id="searchbar" style="display:none;">
+
+	<table class="table">
+		<thead><th>SELECT DISH</th></thead>
+		<tbody>
+			<td>
+				<form role="form">
+						<div class="form-group">
+							<!-- <label for="searchDish">SELECT DISH</label> -->
+							<input type="keyword" class="form-control" id="searchDish" placeholder="Enter keyword">
+						</div>
+					</form>
+			</td>
+			<td>
+				<select class="form-control">
+						<option>Starters</option>
+						<option>Main course</option>
+						<option>Desserts</option>
+						<option>Drinks</option>
+					</select>
+			</td>
+		</tbody>
+	</table>
+</div>
+
+<div id="allDishes">
+
+</div>
+ 		
+<!-- Number of Guests view !-->
+<div id="numGuestsView" style="display:none;">
+	<div class="container">
 		
+			<div>My dinner: <span id="numberOfGuests"></span>people</div>
+		 </div>
+			
 		<div class="col-xs-6 col-sm-3">
-		    <h3>Select Dish</h3>
- 			<div id="allDishes">
- 			</div>
-		</div>
-		
-		
-    </div> 
+ 			<button id="backButton" class="btn">Go back and edit dinner</button></div>
+	  </div> 
  </div> 
- 
+  
  
  
     <!-- jQuery -->
@@ -76,10 +137,16 @@
 	<script src="js/view/homeView.js"></script>
 	
 	<script src="js/view/exampleView.js"></script>
-	<script src="js/view/exampleViewController.js"></script>
+	<script src="js/view/exampleViewController.js"></script>	
 	
+	<script src="js/view/sidebarView.js"></script>
+	<script src="js/view/sidebarViewController.js"></script>
+
 	<script src="js/view/selectDishView.js"></script>
 	<script src="js/view/selectDishViewController.js"></script>
+    
+    <script src="js/view/numGuestsView.js"></script>
+	<script src="js/view/numGuestsViewController.js"></script>
 	
   </body>
 </html>

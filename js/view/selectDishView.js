@@ -6,18 +6,19 @@ var SelectDishView = function (container,model) {
 	this.numberOfGuests = container.find("#numberOfGuests");
 	this.plusButton = container.find("#plusGuest");
 	this.minusButton = container.find("#minusGuest");
+	this.confirmButton = container.find("#confirmButton");
 	//Creating the components dynamically. Here we create the following HTML content:
 	//
-	//<div class="row">
+	// <div class="row">
 	//  Total menu price <span id="totalPrice"></span>
-	//</div>
-	//
+	// </div>
+	// 
 	//and add it to the the exampleView 
 	
 	//div we just store in temporary variable because we won't need it later
 	var div = $("<div>");
 	//we set the constant text
-	div.html("Total menu price ");
+	div.html("Total menu price: SEK ");
 	//and we add the text-primary class to make it blue
 	div.addClass("text-primary");
 	//total price we store in object variable (using this) so we can access it later
@@ -28,6 +29,7 @@ var SelectDishView = function (container,model) {
 	div.append(this.totalPrice);
 	//finally we add the div to the view container
 	container.append(div);
+	
 	
 	//Set the inital values of the components
 	this.numberOfGuests.html(model.getNumberOfGuests());

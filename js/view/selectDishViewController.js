@@ -1,4 +1,3 @@
-//ExampleViewController Object constructor
 var SelectDishViewController = function(view, model ) {
 	
 	view.plusButton.click(function(){
@@ -7,5 +6,13 @@ var SelectDishViewController = function(view, model ) {
 	
 	view.minusButton.click(function(){
 		model.setNumberOfGuests(model.getNumberOfGuests() - 1);
+	
+	
+});
+	view.confirmButton.click(function(){
+		$('#selectDishView').hide();
+		$('#homeView').hide();
+		$('#numGuestsView').show();
 	});
-}
+	 
+};
