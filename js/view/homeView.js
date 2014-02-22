@@ -1,5 +1,6 @@
 $( "#createDinner" ).click(function() {
-	$('#selectDishView').show();
 	$('#homeView').hide();
+	$('#sidebarView').show();
 	$('#searchbar').show();
+	$('#selectDishView').show();
 	});

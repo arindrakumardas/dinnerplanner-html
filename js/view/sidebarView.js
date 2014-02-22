@@ -1,16 +1,22 @@
 //ExampleView Object constructor
-var SelectDishView = function (container,model) {
+var SidebarView = function (container,model) {
 	
+	// Get all the relevant elements of the view (ones that show data
+  	// and/or ones that responed to interaction)
+	this.numberOfGuests = container.find("#numberOfGuests");
+	this.plusButton = container.find("#plusGuest");
+	this.minusButton = container.find("#minusGuest");
+	this.div = container.find("#sidebarView");
 	//Creating the components dynamically. Here we create the following HTML content:
 	//
-	<div class="row">
-	 Total menu price: <span id="totalPrice"></span>
-	</div>
-	
+	// <div class="row">
+	//  Total menu price <span id="totalPrice"></span>
+	// </div>
+	// 
 	//and add it to the the exampleView 
 	
 	//div we just store in temporary variable because we won't need it later
-	var dishes = $("<dishes>");
+	var div = $("<div>");
 	//we set the constant text
 	div.html("Total menu price: SEK ");
 	//and we add the text-primary class to make it blue
@@ -22,7 +28,7 @@ var SelectDishView = function (container,model) {
 	//we add total price span to the div
 	div.append(this.totalPrice);
 	//finally we add the div to the view container
-	table.append(div);
+	container.append(div);
 	
 	//Set the inital values of the components
 	this.numberOfGuests.html(model.getNumberOfGuests());
