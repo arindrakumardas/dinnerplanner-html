@@ -1,3 +1,29 @@
+a:link{
+	text-decoration: none;
+}
+#sidebarView {
+	border-right: inset;
+}
+#homeView {
+	background: url("bg.jpg");
+	background-size: 1440px 800px;
+	background-repeat: no-repeat;
+}
+.jumbotron {
+	border-radius: 10px;
+}
+.lead {
+	font-family: sans-serif;
+	font-size: 40px;
+	padding-left: 40px;
+}
+.navbar {
+	height: 8%;
+}
+#searchbar {
+	display: block;
+	background-color: #FFFF99;
+}
 .side-container {
 	padding: 9px 0;
 	    left:20px;
@@ -5,7 +31,15 @@
 	    width:20%;
 }
 
+.sublead {
+	font-size: 20px;
+	font-style: italic;
+
+}
+
 .text-primary {
-	padding-left:100px;
-	
+	padding-left:100px;	
+}
+thead {
+	text-decoration: bold;
 }

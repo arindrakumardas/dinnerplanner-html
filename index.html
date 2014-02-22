@@ -14,8 +14,8 @@
   <body>
  <nav class="navbar navbar-default" role="navigation" style="height:20px;">
 		<div class="container">
-		<p class="lead" style="padding-top:8px;"> Dinner planner </p>
-	</div>
+			<p class="lead" style="padding-top:8px;"> Dinner planner </p>
+		</div>
  </nav>	
 	<!-- <div class="container">
 		<div id="exampleView" style="display:none;">
@@ -29,16 +29,16 @@
 		</div> -->
 		
  <!-- Home View -->	
-		<div id="homeView">
-			<div class="container">
+	<div id="homeView">
+		<div class="container">
 			<h1>A Home Dinner Service</h1>
 			<button id="createDinner" class="btn">Create new dinner</button>
-		</div></div>
+		</div>
 	</div>
 
 		
  <!-- Select dish View -->	
- <div id="selectDishView" style="display:none;">
+<!--  <div id="selectDishView" style="display:none;">
 	 <div class="container">
 		 <div class="col-xs-6 col-sm-3">
  			<div>
@@ -60,7 +60,22 @@
 		
 		
     </div> 
- </div> 
+ </div>  -->
+
+<!-- Number of Guests view !-->
+	<div id="numGuestsView" style="display:none;">
+		<div class="container">
+			<div class="col-xs-6 col-sm-9">
+	 			<div>
+					Number of guests: <span id="numberOfGuests"></span>
+	 			</div>
+	 		</div>
+			
+			<div class="col-xs-6 col-sm-3">
+	 			<button id="backButton" class="btn">Back</button>
+			</div>
+	    </div> 
+	 </div> 
  
  
  
@@ -80,6 +95,9 @@
 	
 	<script src="js/view/selectDishView.js"></script>
 	<script src="js/view/selectDishViewController.js"></script>
+
+	<script src="js/view/numGuestsView.js"></script>
+	<script src="js/view/numGuestsViewController.js"></script>
 	
   </body>
 </html>

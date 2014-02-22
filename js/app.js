@@ -14,7 +14,10 @@ $(function() {
 	//Select Dish controllers and views
 	var selectDishView = new SelectDishView($("#selectDishView"),model);
 	var selectDishViewController = new SelectDishViewController(selectDishView,model);
-	
-	
+
+	//Number of Guests view and controller
+	var numGuestsView = new NumGuestsView($("#numGuestsView"),model);
+	var numGuestsViewController = new NumGuestsViewController(numGuestsView,model);
+
 	
 });

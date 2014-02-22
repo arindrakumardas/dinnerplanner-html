@@ -1,4 +1,4 @@
 $( "#createDinner" ).click(function() {
-	$('#selectDishView').show();
+	$('#numGuestsView').show();
 	$('#homeView').hide();
 	});
