@@ -17,6 +17,7 @@ var SelectDishView = function (container,model) {
 	
 	//div we just store in temporary variable because we won't need it later
 	var div = $("<div>");
+	var dishes = $("<dishes>");
 	//we set the constant text
 	div.html("Total menu price: SEK ");
 	//and we add the text-primary class to make it blue
