@@ -44,7 +44,7 @@
 
 		
  <!-- Sidebar View -->
- <div id="sidebarView" style="display:none;">
+ <div id="selectDishView" style="display:none;">
 	 
 		 <div class="col-xs-6 col-sm-3">
  			<div>
@@ -56,7 +56,7 @@
  			    <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
  			</div>
 
- 			<table class="table">
+ 			<table class="table" id="menu-table">
  				<thead>
  					<th>Dish Name</th>
  					<th>Cost</th>
@@ -65,16 +65,18 @@
  					<tr>
  						<td>Pending</td>
  						<td>0.00</td>
- 					<!-- *******************************************
+<!--  				*******************************************
 			  		 @TODO: Enter dynamic list with selections here 
-			 		 ******************************************** -->
-			 		</tr>
+			 		 ********************************************
+ -->			 		</tr>
 			 		<tr>
-			 			<td style="text-align:right">SEK</td>
+			 			<td id="total" style="text-align:right">SEK</td>
  						<td>0.00</td>
  					</tr>
  				</tbody>
  			</table>
+
+ 			<div><span></span></div>
 			
 			<button id="confirmButton" class="btn btn-default">Confirm Dinner</button>
  		</div>

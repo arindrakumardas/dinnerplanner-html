@@ -9,20 +9,16 @@ a:link{
 	background-size: 1440px 800px;
 	background-repeat: no-repeat;
 }
-
 .jumbotron {
 	border-radius: 10px;
 }
 .lead {
-	font-family: Helvetica, sans-serif;
+	font-family: sans-serif;
 	font-size: 40px;
 	padding-left: 40px;
 }
 .navbar {
 	height: 8%;
-}
-.navbar> #homeView {
-	background-color: #FFFF99
 }
 #searchbar {
 	display: block;

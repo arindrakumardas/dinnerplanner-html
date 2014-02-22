@@ -8,10 +8,10 @@ var SelectDishView = function (container,model) {
 	this.minusButton = container.find("#minusGuest");
 	//Creating the components dynamically. Here we create the following HTML content:
 	//
-	//<div class="row">
+	// <div class="row">
 	//  Total menu price <span id="totalPrice"></span>
-	//</div>
-	//
+	// </div>
+	// 
 	//and add it to the the exampleView 
 	
 	//div we just store in temporary variable because we won't need it later
