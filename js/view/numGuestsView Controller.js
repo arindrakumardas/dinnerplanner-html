@@ -6,5 +6,7 @@ var NumGuestsViewController = function(view, model ) {
 		$('#homeView').hide();
 		$('#numGuestsView').hide();
 		$('#sidebarView').hide();
+		$('#searchbar').show();
 	});
+	
 }
