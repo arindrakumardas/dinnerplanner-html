@@ -18,5 +18,10 @@ $(function() {
 	var selectDishViewController = new SelectDishViewController(selectDishView,model);
 	
 	
+	//Instructions contrllers and views
+	var instructionsView = new InstructionsView($("#instructionsView"),model);
+	var instructionsViewController = new InstructionsViewController(instructionsView,model);
+	
+	
 	
 });
