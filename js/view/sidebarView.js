@@ -32,7 +32,7 @@
 		container.append(div);
 		
 		//Set the inital values of the components
-	this.numberOfGuests.html(model.getNumberOfGuests());
+	    this.numberOfGuests.html(model.getNumberOfGuests());
 		this.totalPrice.html(model.getTotalMenuPrice());
 				/*****************************************  
 		      Observer implementation    
