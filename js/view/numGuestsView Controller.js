@@ -5,7 +5,7 @@ var NumGuestsViewController = function(view, model ) {
 		$('#selectDishView').show();
 		$('#homeView').hide();
 		$('#numGuestsView').hide();
-		$('#sidebarView').hide();
+		$('#sidebarView').show();
 		$('#searchbar').show();
 	});
 	
