@@ -34,7 +34,17 @@
 		//Set the inital values of the components
 	    this.numberOfGuests.html(model.getNumberOfGuests());
 		this.totalPrice.html(model.getTotalMenuPrice());
-				/*****************************************  
+
+
+		$( "#confirmButton" ).click(function() {
+	$('#homeView').hide();
+	$('#sidebarView').hide();
+	$('#searchbar').hide();
+	$('#selectDishView').hide();
+	$('#numGuestsView').show();
+	$('#instructionsView').show();
+	});
+		/*****************************************  
 		      Observer implementation    
 		*****************************************/
 		
