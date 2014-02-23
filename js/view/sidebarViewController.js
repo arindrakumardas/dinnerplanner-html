@@ -13,5 +13,6 @@ var SidebarViewController = function(view, model ) {
 		$('#homeView').hide();
 		$('#sidebarView').hide();
 		$('#numGuestsView').show();
+		$('#searchbar').hide();
 	});
 }
