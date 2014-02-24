@@ -37,10 +37,10 @@ var SidebarView = function (container,model) {
 	
 
 	//Set action for confirm button
-	$("#confirmButton").click(function(){
-		$('#searchbar').hide();
-		$('#dishDescriptionView').show();
-	});
+	// $("#confirmButton").click(function(){
+	// 	$('#searchbar').hide();
+	// 	$('#dishDescriptionView').show();
+	// });
 	
 	/*****************************************  
 	      Observer implementation    
