@@ -42,6 +42,7 @@ var SidebarView = function (container,model) {
 		$('#sidebarView').hide();
 		$('#selectDishView').hide();
 		$('#numGuestsView').show();
+		$('#summaryView').show();
 	 });
 	
 	/*****************************************  
