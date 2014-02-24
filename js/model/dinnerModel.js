@@ -4,6 +4,8 @@ var DinnerModel = function() {
 	var menu = [];
 	var numberOfGuests =3; //set default number of guests
 	menu['starter'] = 1; //set a starter to the menu, to use for testing
+	// menu['main'] = 100; //set a main to the menu, to use for testing
+	menu['dessert'] = 201; //set a dessert to the menu, to use for testing
 
 
 	this.setNumberOfGuests = function(num) {
@@ -39,6 +41,15 @@ var DinnerModel = function() {
 			ingredients = ingredients.concat(dish.ingredients);
 		}
 		return ingredients;
+	}
+
+	this.getDishCost = function(dish) {
+		var ingredients = dish.ingredients;
+		var sum = 0.;
+		for(key in ingredients) {
+			sum += parseFloat(ingredients[key].price) * this.getNumberOfGuests();
+		}
+		return sum;
 	}
 
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
