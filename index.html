@@ -74,7 +74,7 @@
  -->			 		</tr>
 			 		<tr>
 			 			<td id="total" style="text-align:right">SEK</td>
- 						<td><span id="totalCost">0.00</span></td>
+ 						<td>0.00</td>
  					</tr>
  				</tbody>
  			</table>
@@ -101,9 +101,10 @@
 			</td>
 			<td>
 				<select class="form-control">
-						<option id="starterOpt">Starters</option>
-						<option id="mainOpt">Main course</option>
-						<option id="dessertOpt">Desserts</option>
+						<option>Starters</option>
+						<option>Main course</option>
+						<option>Desserts</option>
+						<option>Drinks</option>
 					</select>
 			</td>
 		</tbody>
@@ -111,30 +112,8 @@
 </div>
 
 <div id="selectDishView" style = "display:none;" >
-	<div class="col-xs-6 col-sm-8">
-				<div class="centered">
 
-					<div id="images">
-						<a href="#">
-					        <img id="starter" width="150px" height="150px">
-					        <div class="caption"><span id="starterName"></span></div>
-					        <div class="caption"><span id="starterDesc"> </span></div>
-					    </a>
-					    <a href="#">
-					        <img id="main" width="150px" height="150px">
-					        <div class="caption"><span id="mainName"></span></div>
-					        <div class="caption"><span id="mainDesc"></span></div>
-					    </a>
-					    <a href="#">
-				        	<img id="dessert" width="150px" height="150px">
-				        	<div class="caption"><span id="dessertName"></span></div>
-					        <div class="caption"><span id="dessertDesc"></span></div>
-					    </a>
-					</div>
 
-			
-	    		</div> 
-			</div>
 </div>
  		
 
@@ -214,7 +193,7 @@
 	    </div> 
 	 </div>  -->
 
-<!-- Summary view !-->
+<!-- Number of Guests view !-->
 	<div id="summaryView" style="display:none;">
 		<div class="container">
 			<div class="col-xs-6 col-sm-2">
@@ -246,7 +225,7 @@
 	    		</div> 
 			</div> 
 			<div class="col-xs-6 col-sm-2">
-	 			<h5 id='totalCostHeader'>Total cost: </h5><span id="totalCost"></span> SEK
+	 			<h5 id='totalCostHeader'>Total cost: </h5><span id="totalCost"></span>
 	 		</div>
 
 
