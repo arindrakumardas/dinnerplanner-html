@@ -17,7 +17,7 @@ var SummaryView = function (container,model) {
 
 	this.totalCost = container.find("#totalCost");
 
-	this.printRecipe = container.find("#printRecipe");
+	this.printRecipeBtn = container.find("#printRecipeBtn");
 
 	// this.starterName.innerHTML = 'asdf';
 	//Creating the components dynamically. Here we create the following HTML content:
