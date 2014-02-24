@@ -52,7 +52,7 @@ var InstructionsView = function (container,model) {
 	*****************************************/
 	
 	//Register an observer to the model
-	model.addObserver(this);
+	//model.addObserver(this);
 	
 	//This function gets called when there is a change at the model
 	//this.update = function(arg){
