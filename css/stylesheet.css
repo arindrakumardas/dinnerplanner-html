@@ -1,16 +1,24 @@
+a{
+	color: black;
+	opacity: 1.5;
+}
 a:link{
 	text-decoration: none;
 }
-#sidebarView {
-	border-right: inset;
-}
-#homeView {
-	background: url("bg.jpg");
-	background-size: 1440px 800px;
+.background {
+	background: url(../images/bg.jpg);
 	background-repeat: no-repeat;
-}
+	background-size: 1440px 800px;
+	height: 800px;
+	width: 1440px;
+  	opacity: 0.4;
+  	position: fixed;
+  	z-index: -9999;
+}  
 .jumbotron {
 	border-radius: 10px;
+	background-color: transparent;
+	padding-left: 10%
 }
 .lead {
 	font-family: sans-serif;
@@ -19,6 +27,9 @@ a:link{
 }
 .navbar {
 	height: 8%;
+	background-color: #660000;
+	color: white;
+	opacity: 0.6;
 }
 #searchbar {
 	display: block;
@@ -26,16 +37,18 @@ a:link{
 }
 .side-container {
 	padding: 9px 0;
-	    left:20px;
-	    top:60px;
-	    width:20%;
+    left:20px;
+    top:60px;
+    width:20%;
+}
+#sidebarView {
+	border-right: inset;
 }
 .sublead {
 	font-size: 20px;
 	font-style: italic;
 
 }
-
 .text-primary {
 	padding-left:100px;	
 }
