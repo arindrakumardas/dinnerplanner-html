@@ -12,6 +12,7 @@
 
   </head>
   <body>
+<<<<<<< HEAD
   	<div class="background"></div>
 
  	<nav class="navbar navbar-fixed-to-top" role="navigation">
@@ -22,6 +23,14 @@
  	</nav>	
 
 <!--	 <div class="container">
+=======
+ <nav class="navbar navbar-default" role="navigation" style="height:20px;">
+		<div class="container">
+			<p class="lead" style="padding-top:8px;"> Dinner planner </p>
+		</div>
+ </nav>	
+	<!-- <div class="container">
+>>>>>>> magnusViews
 		<div id="exampleView" style="display:none;">
 			<div>
 				Number of guest <span id="numberOfGuests"></span>
@@ -32,6 +41,7 @@
 			</div>
 		</div> -->
 		
+<<<<<<< HEAD
  <!-- Home View -->
 		<div id="homeView">
 			<div class="container-fluid">
@@ -49,6 +59,20 @@
  <!-- Sidebar View -->
  <div id="sidebarView" style="display:none;">
 	 
+=======
+ <!-- Home View -->	
+	<div id="homeView">
+		<div class="container">
+			<h1>A Home Dinner Service</h1>
+			<button id="createDinner" class="btn">Create new dinner</button>
+		</div>
+	</div>
+
+		
+ <!-- Select dish View -->	
+<!--  <div id="selectDishView" style="display:none;">
+	 <div class="container">
+>>>>>>> magnusViews
 		 <div class="col-xs-6 col-sm-3">
  			<div><h2>My Dinner</h2>
  				Number of guests: <span id="numberOfGuests"></span>
@@ -173,9 +197,80 @@
     
  			<button id="backButton" class="btn btn-primary" role="button" style="float: right;">Go back and edit dinner</button>  </h1>
 		
+<<<<<<< HEAD
 	  </div> 
   </div>
  </div> 
+=======
+    </div> 
+ </div>  -->
+
+<!-- Number of Guests view !-->
+	<div id="numGuestsView" style="display:none;">
+		<div class="container">
+			<div class="col-xs-6 col-sm-9">
+	 			<div>
+					Number of guests: <span id="numberOfGuests"></span>
+	 			</div>
+	 		</div>
+			
+			<div class="col-xs-6 col-sm-3">
+	 			<button id="backButton" class="btn">Back</button>
+			</div>
+	    </div> 
+	 </div> 
+
+<!-- Number of Guests view !-->
+	<div id="summaryView" style="display:none;">
+		<div class="container">
+			<div class="col-xs-6 col-sm-2">
+	 			
+	 		</div>
+			
+			<div class="col-xs-6 col-sm-8">
+				<div class="centered">
+
+					<div id="images">
+						<a>
+					        <img id="starter" width="150px" height="150px">
+					        <div class="caption"><span id="starterName">No starter</span></div>
+					        <div class="caption"><span id="starterCost">0 SEK</span></div>
+					    </a>
+					    <a>
+					        <img id="main" width="150px" height="150px">
+					        <div class="caption"><span id="mainName">No main dish</span></div>
+					        <div class="caption"><span id="mainCost">0 SEK</span></div>
+					    </a>
+					    <a>
+				        	<img id="dessert" width="150px" height="150px">
+				        	<div class="caption"><span id="dessertName">No dessert</span></div>
+					        <div class="caption"><span id="dessertCost">0 SEK</span></div>
+					    </a>
+					</div>
+
+			
+	    		</div> 
+			</div> 
+			<div class="col-xs-6 col-sm-2">
+	 			<h5 id='totalCostHeader'>Total cost: </h5><span id="totalCost"></span>
+	 		</div>
+
+
+
+			<div class="col-xs-4 col-sm-4">
+			</div>
+			<div class="col-xs-4 col-sm-4">
+				<button id="printRecipeBtn" class = "btn btn-lg btn-block">Print full recipe</button>
+			</div>
+			<div class="col-xs-4 col-sm-4">
+			</div>
+	 	</div>
+	</div>
+
+
+
+	 
+>>>>>>> magnusViews
  
 <!-- Instructions view !-->
 <div id="instructionsView" style="display:none;">
@@ -204,6 +299,7 @@
 	<script src="js/view/selectDishView.js"></script>
 	<script src="js/view/selectDishViewController.js"></script>
 
+<<<<<<< HEAD
 	<script src="js/view/dishDescriptionView.js"></script>
 	<script src="js/view/dishDescriptionViewController.js"></script>
     
@@ -212,6 +308,13 @@
 	
     <script src="js/view/instructionsView.js"></script>
 	<script src="js/view/instructionsViewController.js"></script>
+=======
+	<script src="js/view/numGuestsView.js"></script>
+	<script src="js/view/numGuestsViewController.js"></script>
+
+	<script src="js/view/summaryView.js"></script>
+	<script src="js/view/summaryViewController.js"></script>
+>>>>>>> magnusViews
 	
   </body>
 </html>

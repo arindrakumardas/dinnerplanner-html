@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 a{
 	color: black;
 	opacity: 1.5;
@@ -19,6 +20,21 @@ a:link{
 	border-radius: 10px;
 	background-color: transparent;
 	padding-left: 10%
+=======
+a:link{
+	text-decoration: none;
+}
+#sidebarView {
+	border-right: inset;
+}
+#homeView {
+	background: url("bg.jpg");
+	background-size: 1440px 800px;
+	background-repeat: no-repeat;
+}
+.jumbotron {
+	border-radius: 10px;
+>>>>>>> magnusViews
 }
 .lead {
 	font-family: sans-serif;
@@ -27,9 +43,12 @@ a:link{
 }
 .navbar {
 	height: 8%;
+<<<<<<< HEAD
 	background-color: #660000;
 	color: white;
 	opacity: 0.6;
+=======
+>>>>>>> magnusViews
 }
 #searchbar {
 	display: block;
@@ -52,10 +71,43 @@ a:link{
 	font-size: 20px;
 	font-style: italic;
 
+<<<<<<< HEAD
 }
+=======
+.sublead {
+	font-size: 20px;
+	font-style: italic;
+
+}
+
+>>>>>>> magnusViews
 .text-primary {
 	padding-left:100px;	
 }
 thead {
 	text-decoration: bold;
+<<<<<<< HEAD
+=======
+}
+
+.summaryfigure img { 
+	display: inline-block; 
+	vertical-align: middle; 
+}
+
+#images{
+    text-align:center;
+    margin:50px auto;
+}
+
+#images a{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+}
+
+#totalCostHeader {
+	padding-top: 200px;
+>>>>>>> magnusViews
 }

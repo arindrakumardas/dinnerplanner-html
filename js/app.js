@@ -17,6 +17,7 @@ $(function() {
 	
 	var selectDishView = new SelectDishView($("#selectDishView"),model);
 	var selectDishViewController = new SelectDishViewController(selectDishView,model);
+<<<<<<< HEAD
 	
 	var dishDescriptionView = new DishDescriptionView($("#dishDescriptionView"),model);
 	var dishDescriptionViewController = new DishDescriptionViewController(dishDescriptionView,model);
@@ -28,5 +29,16 @@ $(function() {
 	var instructionsView = new InstructionsView($("#instructionsView"),model);
 	var instructionsViewController = new InstructionsViewController(instructionsView,model);
 	
+=======
+
+	//Number of Guests view and controller
+	var numGuestsView = new NumGuestsView($("#numGuestsView"),model);
+	var numGuestsViewController = new NumGuestsViewController(numGuestsView,model);
+
+	//Summary view and controller
+	var summaryView = new SummaryView($("#summaryView"),model);
+	var summaryViewController = new SummaryViewController(summaryView,model);
+
+>>>>>>> magnusViews
 	
 });
