@@ -11,5 +11,8 @@
 	
 	//ExampleViewController Object constructor
 	var DishDescriptionView = function(view, model ) {
+		
+		console.log(model.lastClickedDishID);
+		
 	}
 	
