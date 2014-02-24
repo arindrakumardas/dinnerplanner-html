@@ -60,3 +60,7 @@ thead {
     text-decoration:none;
     color:black;
 }
+
+#totalCostHeader {
+	padding-top: 200px;
+}
