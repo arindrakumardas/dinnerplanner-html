@@ -32,9 +32,6 @@ var SidebarView = function (container,model) {
 // 	
 	//Set the inital values of the components
 	this.numberOfGuests.html(model.getNumberOfGuests());
-<<<<<<< HEAD
-	// this.totalPrice.html(model.getTotalMenuPrice());
-=======
 	this.totalPrice.html(model.getTotalMenuPrice());
 
 	//Set action for confirm button
@@ -42,7 +39,6 @@ var SidebarView = function (container,model) {
 		$('#searchbar').hide();
 		$('#dishDescriptionView').show();
 	});
->>>>>>> ireView
 	
 	/*****************************************  
 	      Observer implementation    
