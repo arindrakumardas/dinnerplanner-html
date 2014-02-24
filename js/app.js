@@ -19,5 +19,9 @@ $(function() {
 	var numGuestsView = new NumGuestsView($("#numGuestsView"),model);
 	var numGuestsViewController = new NumGuestsViewController(numGuestsView,model);
 
+	//Summary view and controller
+	var summaryView = new SummaryView($("#summaryView"),model);
+	var summaryViewController = new SummaryViewController(summaryView,model);
+
 	
 });
