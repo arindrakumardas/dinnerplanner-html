@@ -16,15 +16,6 @@ var NumGuestsView = function (container,model) {
 	
 	//Set the inital values of the components
 	this.numberOfGuests.html(model.getNumberOfGuests());
-	
-	// Back button function
-	$( "#backButton" ).click(function() {
-		$('#selectDishView').show();
-		$('#homeView').hide();
-		$('#numGuestsView').hide();
-		$('#sidebarView').show();
-		$('#searchbar').show();
-	});
 
 	/*****************************************  
 	      Observer implementation    

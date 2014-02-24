@@ -2,8 +2,7 @@
 var SummaryViewController = function(view, model ) {
 
 	view.printRecipeBtn.click(function(){
-		$('#homeView').show();
-		$('#numGuestsView').hide();
 		$('#summaryView').hide();
+		$('#instructionsView').show();
 	});
 }

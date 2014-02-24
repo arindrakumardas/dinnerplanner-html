@@ -18,44 +18,6 @@ var SummaryView = function (container,model) {
 	this.totalCost = container.find("#totalCost");
 
 	this.printRecipeBtn = container.find("#printRecipeBtn");
-
-	// this.starterName.innerHTML = 'asdf';
-	//Creating the components dynamically. Here we create the following HTML content:
-	//
-	//<div class="row">
-	//  Total menu price <span id="totalPrice"></span>
-	//</div>
-	//
-	//and add it to the the exampleView 
-	
-	//Set the inital values of the components
-	
-	for(var i = 0; i < model.getFullMenu().length; i++) {
-		var dish = model.getFullMenu()[i];
-		if(dish.type == 'starter') {
-			this.starter.attr('src', 'images/' + dish.image);
-			this.starterName.html(dish.name);
-			this.starterCost.html(model.getDishCost(dish) + ' SEK');
-		}
-		if(dish.type == 'main dish') {
-			this.main.attr('src', 'images/' + dish.image);
-			this.mainName.html(dish.name);
-			this.mainCost.html(model.getDishCost(dish) + ' SEK');
-		}
-		if(dish.type == 'dessert') {
-			this.dessert.attr('src', 'images/' + dish.image);
-			this.dessertName.html(dish.name);
-			this.dessertCost.html(model.getDishCost(dish) + ' SEK');
-		}
-	}
-
-	this.totalCost.html(model.getTotalMenuPrice());
-	// document.getElementById("starter").src="/images/toast.jpg";
-	// this.starterName.html('TESTING');
-
-	// this.starterName.html(model.getSelectedDish('starter'));
-	// this.mainName.html(model.getSelectedDish('main').name);
-	// this.dessertName.html(model.getSelectedDish('dessert').name);
 	
 	/*****************************************  
 	      Observer implementation    
@@ -87,4 +49,7 @@ var SummaryView = function (container,model) {
 
 	this.totalCost.html(model.getTotalMenuPrice());
 	}
+
+	//Set the inital values of the components
+	this.update(); //Load all data
 }

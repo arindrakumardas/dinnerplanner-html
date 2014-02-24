@@ -1,11 +1,11 @@
 //NumGuestViewController Object constructor
 var NumGuestsViewController = function(view, model ) {
 	view.backButton.click(function(){
-		$('#selectDishView').show();
-		$('#homeView').hide();
+		$('#summaryView').hide();
 		$('#numGuestsView').hide();
+		$('#instructionsView').hide();
+		$('#selectDishView').show();
 		$('#sidebarView').show();
 		$('#searchbar').show();
-		$('#summaryView').hide();
 	});
 }

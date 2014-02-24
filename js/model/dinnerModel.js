@@ -4,8 +4,8 @@ var DinnerModel = function() {
 	var menu = [];
 	var numberOfGuests =3; //set default number of guests
 	menu['starter'] = 1; //set a starter to the menu, to use for testing
-	// menu['main'] = 100; //set a main to the menu, to use for testing
-	menu['dessert'] = 201; //set a dessert to the menu, to use for testing
+	menu['main'] = 100; //set a main to the menu, to use for testing
+	menu['dessert'] = 200; //set a dessert to the menu, to use for testing
 
 
 	this.setNumberOfGuests = function(num) {
@@ -41,6 +41,15 @@ var DinnerModel = function() {
 			ingredients = ingredients.concat(dish.ingredients);
 		}
 		return ingredients;
+	}
+
+	this.getPrintableIngredients = function(dish) {
+		var printableText = '';
+		for(var i = 0; i < dish.ingredients.length; i++) {
+			var current = dish.ingredients[i];
+			printableText = printableText + current.name + ' ' + current.quantity +  ' ' + current.unit + '</BR>';
+		}
+		return printableText;
 	}
 
 	this.getDishCost = function(dish) {
