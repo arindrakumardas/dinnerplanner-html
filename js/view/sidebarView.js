@@ -40,6 +40,7 @@ var SidebarView = function (container,model) {
 	 $("#confirmButton").click(function(){
 	 	$('#searchbar').hide();
 		$('#sidebarView').hide();
+		$('#selectDishView').hide();
 		$('#numGuestsView').show();
 	 });
 	

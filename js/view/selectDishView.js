@@ -10,7 +10,7 @@ var SelectDishView = function (container,model) {
 			   console.log(model.getAllDishes("starter")[x].name);
 			}
 		   sessionlist += '<br></li>';
-	    document.getElementById("allDishes").innerHTML=sessionlist;
+	    document.getElementById("selectDishView").innerHTML=sessionlist;
 	
 	
 }
