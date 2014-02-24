@@ -21,8 +21,6 @@ $(function() {
 	var dishDescriptionView = new DishDescriptionView($("#dishDescriptionView"),model);
 	var dishDescriptionViewController = new DishDescriptionViewController(dishDescriptionView,model);
 	
-	//Number of Guests view and controller
-	var numGuestsView = new NumGuestsView($("#numGuestsView"),model);
-	var numGuestsViewController = new NumGuestsViewController(numGuestsView,model);
+	
 	
 });
