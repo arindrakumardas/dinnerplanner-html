@@ -14,9 +14,12 @@ $(function() {
 	//Select Dish controllers and views
 	var sidebarView = new SidebarView($("#sidebarView"),model);
 	var sidebarViewController = new SidebarViewController(sidebarView,model);
+	
 	var selectDishView = new SelectDishView($("#selectDishView"),model);
 	var selectDishViewController = new SelectDishViewController(selectDishView,model);
 	
+	var dishDescriptionView = new DishDescriptionView($("#dishDescriptionView"),model);
+	var dishDescriptionViewController = new DishDescriptionViewController(dishDescriptionView,model);
 	
 	
 });
