@@ -41,6 +41,10 @@ a:link{
     top:60px;
     width:20%;
 }
+#numGuestsView{
+	
+	background-color:#FC3;
+}
 #sidebarView {
 	border-right: inset;
 }
