@@ -11,13 +11,15 @@ $(function() {
 	var exampleView = new ExampleView($("#exampleView"),model);
 	var exampleViewController = new ExampleViewController(exampleView,model);
 	
-	//Select Dish controllers and views
+	//Sidebar controllers and views
 	var sidebarView = new SidebarView($("#sidebarView"),model);
 	var sidebarViewController = new SidebarViewController(sidebarView,model);
 	
+	//Select Dish controllers and views
 	var selectDishView = new SelectDishView($("#selectDishView"),model);
 	var selectDishViewController = new SelectDishViewController(selectDishView,model);
 	
+	//Dish descriptions view and controller
 	var dishDescriptionView = new DishDescriptionView($("#dishDescriptionView"),model);
 	var dishDescriptionViewController = new DishDescriptionViewController(dishDescriptionView,model);
 	
