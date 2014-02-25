@@ -7,6 +7,7 @@ var SidebarView = function (container,model) {
 	this.plusButton = container.find("#plusGuest");
 	this.minusButton = container.find("#minusGuest");
 	this.div = container.find("#sidebarView");
+	this.confirmButton = container.find("#confirmButton");
 	
 	//Creating the components dynamically. Here we create the following HTML content:
 	//
@@ -36,14 +37,7 @@ var SidebarView = function (container,model) {
 //	this.totalPrice.html(model.getTotalMenuPrice());
 	
 
-	//Set action for confirm button
-	 $("#confirmButton").click(function(){
-	 	$('#searchbar').hide();
-		$('#sidebarView').hide();
-		$('#selectDishView').hide();
-		$('#numGuestsView').show();
-		$('#summaryView').show();
-	 });
+	
 	
 	/*****************************************  
 	      Observer implementation    
