@@ -1,13 +1,11 @@
 //ExampleViewController Object constructor
 var SidebarViewController = function(view, model ) {
 	
-	view.plusButton.click(function(){
-		model.setNumberOfGuests(model.getNumberOfGuests() + 1);
+	view.editGuestNumber.click(function(){
+		model.setNumberOfGuests($(this).val());
 	});
 	
-	view.minusButton.click(function(){
-		model.setNumberOfGuests(model.getNumberOfGuests() - 1);
-	});
+	
 	//Set action for confirm button
 	 $("#confirmButton").click(function(){
 	 	$('#searchbar').hide();
