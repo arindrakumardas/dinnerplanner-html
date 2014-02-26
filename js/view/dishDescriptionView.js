@@ -6,23 +6,16 @@ var DishDescriptionView = function(container, model) {
 	this.backToSelectDish = container.find("#backToSelectDish");
 	this.confirmDishButton = container.find("#confirmDishButton");
 	this.dishName = container.find("#dishName");
-<<<<<<< HEAD
 	this.dishImg = container.find("#dishImg");
 	this.dishPrep = container.find("#dishPrep");
-=======
-
->>>>>>> DIshDescIngredients
 	
 	model.addObserver(this);
 
 	this.update = function() {
 		this.dish = model.getDish(model.getLastClickedDishId());
 		this.dishName.html(this.dish.name);
-<<<<<<< HEAD
 		// this.dishImg.attr('src', 'images/' + dish.image);
 		// this.dishPrep.html(view.dish.description);
-=======
-		
 			var ingredientlist = "";
 			var priceCounter = 0;
 			for (var x = 0; x < this.dish.ingredients.length; x++) {
@@ -36,7 +29,6 @@ var DishDescriptionView = function(container, model) {
 			
 			document.getElementById("ingredientlist").innerHTML = ingredientlist;
 			document.getElementById("priceCounter").innerHTML = 'SEK ' + priceCounter;
->>>>>>> DIshDescIngredients
 	}
 		
 	this.update(); //Set initial values
