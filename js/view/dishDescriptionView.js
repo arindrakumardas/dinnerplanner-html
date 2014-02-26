@@ -14,8 +14,11 @@ var DishDescriptionView = function(container, model) {
 	this.update = function() {
 		this.dish = model.getDish(model.getLastClickedDishId());
 		this.dishName.html(this.dish.name);
-		// this.dishImg.attr('src', 'images/' + dish.image);
+		
+		this.dishImg.attr('src', 'images/' + this.dish.image);
 		// this.dishPrep.html(view.dish.description);
+		
+		
 			var ingredientlist = "";
 			var priceCounter = 0;
 			for (var x = 0; x < this.dish.ingredients.length; x++) {
