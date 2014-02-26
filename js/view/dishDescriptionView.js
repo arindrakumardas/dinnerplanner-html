@@ -16,7 +16,7 @@ var DishDescriptionView = function(container, model) {
 		this.dishName.html(this.dish.name);
 		
 		this.dishImg.attr('src', 'images/' + this.dish.image);
-		// this.dishPrep.html(view.dish.description);
+		this.dishPrep.html(this.dish.description);
 		
 		
 			var ingredientlist = "";
