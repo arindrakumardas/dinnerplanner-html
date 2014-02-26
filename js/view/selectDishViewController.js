@@ -1,13 +1,26 @@
-//ExampleViewController Object constructor
 var SelectDishViewController = function(view, model ) {
-	
-	// view.plusButton.click(function(){
-	// 	model.setNumberOfGuests(model.getNumberOfGuests() + 1);
-	// });
-	// 
-	// view.minusButton.click(function(){
-	// 	model.setNumberOfGuests(model.getNumberOfGuests() - 1);
-	// });
 
+	$(document).on("change", "#option", function(){
+	    var selected = this.value;
+	    if(selected=="Starters") {
+	    	$('#starters').show();
+	    	$('#main').hide();
+	    	$('#desserts').hide();
+	    }
+	    else if(selected=="Main course") {
+	    	$('#starters').hide();
+	    	$('#main').show();
+	    	$('#desserts').hide();
+	    }
+	    else if(selected=="Desserts") {
+	    	$('#starters').hide();
+	    	$('#main').hide();
+	    	$('#desserts').show();
+	    } else if(selected == "All") {
+	    	$('#starters').show();
+	    	$('#main').show();
+	    	$('#desserts').show();
+	    }
+	});
 	
 }
