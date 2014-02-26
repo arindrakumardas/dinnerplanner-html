@@ -5,15 +5,7 @@ var NumGuestsView = function (container,model) {
 	this.numberOfGuests = container.find("#numberOfGuests");
 	this.backButton = container.find("#backButton");
 	//Creating the components dynamically. Here we create the following HTML content:
-	//
-	// <div class="row">
-	//  Total menu price <span id="totalPrice"></span>
-	// </div>
-	// 
-	//and add it to the the exampleView 
-	
 
-	
 	//Set the inital values of the components
 	this.numberOfGuests.html(model.getNumberOfGuests());
 

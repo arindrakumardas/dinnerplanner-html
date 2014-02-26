@@ -30,8 +30,7 @@ var DishDescriptionView = function(container, model) {
 				priceCounter += this.dish.ingredients[x].price;
 			}
 			
-			//console.log(priceCounter*model.getNumberOfGuests());
-			//document.getElementById("ingredientheading").innerHTML = ingredientlist;
+			
 			document.getElementById("ingredientlist").innerHTML = ingredientlist;
 			document.getElementById("priceCounter").innerHTML = 'Total Cost: SEK ' + priceCounter*model.getNumberOfGuests();
 			this.ingredientheading.html(model.getNumberOfGuests());
