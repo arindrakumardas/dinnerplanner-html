@@ -20,17 +20,6 @@
  			<h1 class="lead"><a href = "index.html" class = "navbar-home">HOMELETTE</a> <smaller class="sublead">  From the best chefs in the world directly into your kitchen</smaller></h1>
  		</div></div>
  	</nav>	
-
-<!--	 <div class="container">
-		<div id="exampleView" style="display:none;">
-			<div>
-				Number of guest <span id="numberOfGuests"></span>
-			</div>
-			<div>
-				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-			    <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
-			</div>
-		</div> -->
 		
  <!-- Home View -->
 		<div id="homeView">
@@ -118,60 +107,6 @@
 	</table>
 </div>
 
-<!-- *** This is an alternative view with accordion ***
-	 *** uncomment also css code, if used ***
-<div class="col-xs-6 col-sm-8" id="selectDishView" style = "display:none;" >
-	<div class="panel-group" id="accordion">
-	  <div class="panel panel-default">
-	    <div class="panel-heading">
-	      <h4 class="panel-title">
-	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-	          Starters
-	        </a>
-	      </h4>
-	    </div>
-	    <div id="collapseOne" class="panel-collapse collapse in">
-	      <div class="panel-body">
-	        <img id="starter" width="150px" height="150px">
-				<div class="caption"><span id="starterName"></span></div>
-				<div class="caption" id="description"><span id="starterDesc"></span></div>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="panel panel-default">
-	    <div class="panel-heading">
-	      <h4 class="panel-title">
-	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-	          Main Dishes
-	        </a>
-	      </h4>
-	    </div>
-	    <div id="collapseTwo" class="panel-collapse collapse">
-	      <div class="panel-body">
-	        <img id="main" width="150px" height="150px">
-				<div class="caption"><span id="mainName"></span></div>
-				<div class="caption" id="description"><span id="mainDesc"></span></div>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="panel panel-default">
-	    <div class="panel-heading">
-	      <h4 class="panel-title">
-	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-	          Desserts
-	        </a>
-	      </h4>
-	    </div>
-	    <div id="collapseThree" class="panel-collapse collapse">
-	      <div class="panel-body">
-	        <img id="dessert" width="150px" height="150px">
-				<div class="caption"><span id="dessertName"></span></div>
-				<div class="caption" id="description"><span id="dessertDesc"></span></div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-</div>			-->
 <div id="selectDishView" style = "display:none;" class="col-xs-6 col-sm-9">
 		
 		<div class="container">
@@ -187,18 +122,17 @@
 </div>
 
 <!-- Dish description view -->		
-<div  class="col-md-9 pre-scrollable" id="dishDescriptionView" style="display:none;">
+<div  class="col-md-9" id="dishDescriptionView" style="display:none;">
 	<div class="col-md-3">
 
+		<div></div>
 		<button id="backToSelectDish" class="btn btn-warning" role:"button">Back to select dish</button>
 		
 			
 		<h3 id = "dishName"></h3>
 		<img id= "dishImg">
 
-		
-			<!-- <button id="backToSelectDish" class="btn btn-warning" role:"button">Back to select dish</button>
-		 -->	<h3>PREPARATION</h3>
+		<h3>PREPARATION</h3>
 			<p id="dishPrep" style="width:500px;"></p>
 		</div>
 
