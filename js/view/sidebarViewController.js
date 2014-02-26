@@ -1,9 +1,4 @@
-//ExampleViewController Object constructor
 var SidebarViewController = function(view, model ) {
-	
-	// view.editGuestNumber.click(function(){
-	// 	model.setNumberOfGuests($(this).val());
-	// });
 	
 	$('#editGuestNumber').bind('input', function() {
     	model.setNumberOfGuests($(this).val());
@@ -19,4 +14,17 @@ var SidebarViewController = function(view, model ) {
 		$('#summaryView').show();
 	 });
 	 
+	 // Set action form remove buttons
+	 $("#removeStarterBtn").click(function(){
+	 	$('#starterRow').hide();
+//	 	$('#totalCost').html(model.getTotalMenuPrice()-getDishCost(view.dish));
+	 });
+
+	 $("#removeMainBtn").click(function(){
+	 	$('#mainRow').hide();
+	 });
+
+	 $("#removeDessertBtn").click(function(){
+	 	$('#dessertRow').hide();
+	 });
 }
