@@ -19,13 +19,6 @@ var SummaryView = function (container,model) {
 
 	this.printRecipeBtn = container.find("#printRecipeBtn");
 	
-	/*****************************************  
-	      Observer implementation    
-	*****************************************/
-	
-	//Register an observer to the model
-	model.addObserver(this);
-	
 	//This function gets called when there is a change at the model
 	this.update = function(arg){
 		for(var i = 0; i < model.getFullMenu().length; i++) {
@@ -49,6 +42,13 @@ var SummaryView = function (container,model) {
 
 	this.totalCost.html(model.getTotalMenuPrice());
 	}
+	
+	/*****************************************  
+	      Observer implementation    
+	*****************************************/
+	
+	//Register an observer to the model
+	model.addObserver(this);
 
 	//Set the inital values of the components
 	this.update(); //Load all data

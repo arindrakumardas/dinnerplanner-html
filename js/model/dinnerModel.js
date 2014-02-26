@@ -41,6 +41,7 @@ var DinnerModel = function() {
 			menuDishes.push(this.getDish(menu[key]));
 		}
 		return menuDishes;
+		notifyObservers();
 	}
 
 	//Returns all ingredients for all the dishes on the menu.
@@ -51,6 +52,7 @@ var DinnerModel = function() {
 			ingredients = ingredients.concat(dish.ingredients);
 		}
 		return ingredients;
+		notifyObservers();
 	}
 
 	this.getPrintableIngredients = function(dish) {
@@ -60,6 +62,7 @@ var DinnerModel = function() {
 			printableText = printableText + current.name + ' ' + (current.quantity*this.getNumberOfGuests()) +  ' ' + current.unit + '</BR>';
 		}
 		return printableText;
+		notifyObservers();
 	}
 
 	this.getDishCost = function(dish) {
@@ -117,6 +120,7 @@ var DinnerModel = function() {
 		}
 	  	return dish.type == type && found;
 	  });	
+	  notifyObservers();
 	}
 
 	//function that returns a dish of specific ID

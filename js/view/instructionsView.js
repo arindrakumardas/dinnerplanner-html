@@ -21,16 +21,7 @@ var InstructionsView = function (container,model) {
 	this.dessertPrep = container.find("#dessertPrep");
 
 	this.numberOfGuests = 3
-	
-
-	
-	/*****************************************  
-	      Observer implementation    
-	*****************************************/
-	
-	//Register an observer to the model
-	model.addObserver(this);
-	
+		
 	//This function gets called when there is a change at the model
 	this.update = function(arg){
 		this.numberOfGuests = model.getNumberOfGuests();
@@ -59,8 +50,14 @@ var InstructionsView = function (container,model) {
 	}
 
 
-	//Set the inital values of the components
+	/*****************************************  
+	      Observer implementation    
+	*****************************************/
 	
+	//Register an observer to the model
+	model.addObserver(this);
+
+	//Set the inital values of the components
 	this.update();
 }
  
