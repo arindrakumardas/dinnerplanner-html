@@ -1,7 +1,7 @@
 var DishDescriptionView = function(container, model) {
     // Get all the relevant elements of the view (ones that show data
   	// and/or ones that responed to interaction)
-	
+	this.ingredientheading = container.find("#ingredientheading");
 	this.backToSelectDish = container.find("#backToSelectDish");
 	this.confirmDishButton = container.find("#confirmDishButton");
 	this.dishName = container.find("#dishName");
@@ -18,6 +18,7 @@ var DishDescriptionView = function(container, model) {
 		this.dishPrep.html(this.dish.description);
 		
 		
+		
 			var ingredientlist = "";
 			var priceCounter = 0;
 			for (var x = 0; x < this.dish.ingredients.length; x++) {
@@ -29,8 +30,10 @@ var DishDescriptionView = function(container, model) {
 				priceCounter += this.dish.ingredients[x].price;
 			}
 			
+			//document.getElementById("ingredientheading").innerHTML = ingredientlist;
 			document.getElementById("ingredientlist").innerHTML = ingredientlist;
 			document.getElementById("priceCounter").innerHTML = 'SEK ' + priceCounter;
+			this.ingredientheading.html(model.getNumberOfGuests());
 	}
 		
 	this.update(); //Set initial values
