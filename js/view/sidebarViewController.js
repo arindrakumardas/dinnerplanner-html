@@ -17,7 +17,19 @@ var SidebarViewController = function(view, model ) {
 	 // Set action form remove buttons
 	 $("#removeStarterBtn").click(function(){
 	 	$('#starterRow').hide();
-	 	alert(view.dish);
+	 	//alert(view.dish);
+		 model.removeDishFromMenu(view.dish);
+	 });
+	 
+	 $("#removeMainBtn").click(function(){
+	 	$('#mainRow').hide();
+	 	//alert(view.dish);
+		 model.removeDishFromMenu(view.dish);
+	 });
+	 
+	 $("#removeDessertBtn").click(function(){
+	 	$('#dessertRow').hide();
+	 	//alert(view.dish);
 		 model.removeDishFromMenu(view.dish);
 	 });
 
