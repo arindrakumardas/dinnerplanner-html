@@ -1,10 +1,13 @@
 //ExampleViewController Object constructor
 var SidebarViewController = function(view, model ) {
 	
-	view.editGuestNumber.click(function(){
-		model.setNumberOfGuests($(this).val());
-	});
+	// view.editGuestNumber.click(function(){
+	// 	model.setNumberOfGuests($(this).val());
+	// });
 	
+	$('#editGuestNumber').bind('input', function() {
+    	model.setNumberOfGuests($(this).val());
+	});
 	
 	//Set action for confirm button
 	 $("#confirmButton").click(function(){
