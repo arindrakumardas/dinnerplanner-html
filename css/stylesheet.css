@@ -36,6 +36,7 @@ a:link{
 }
 #instructionsView {
 	padding-top: 20px;
+	padding-bottom: 40px;
 }
 .jumbotron {
 	border-radius: 10px;

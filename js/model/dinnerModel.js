@@ -48,7 +48,7 @@ var DinnerModel = function() {
 		var printableText = '';
 		for(var i = 0; i < dish.ingredients.length; i++) {
 			var current = dish.ingredients[i];
-			printableText = printableText + current.name + ' ' + current.quantity +  ' ' + current.unit + '</BR>';
+			printableText = printableText + current.name + ' ' + (current.quantity*this.getNumberOfGuests()) +  ' ' + current.unit + '</BR>';
 		}
 		return printableText;
 	}

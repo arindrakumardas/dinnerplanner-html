@@ -18,7 +18,7 @@ var DishDescriptionView = function(container, model ) {
 	this.confirmDishButton = container.find("#confirmDishButton");
 	
 		
-		console.log(model.lastClickedDishID);
+		//console.log(model.lastClickedDishID);
 		
 	}
 	
