@@ -20,9 +20,10 @@ var SummaryView = function (container,model) {
 	this.printRecipeBtn = container.find("#printRecipeBtn");
 	
 	//This function gets called when there is a change at the model
-	this.update = function(arg){
+	this.update = function(arg){ 
 		for(var i = 0; i < model.getFullMenu().length; i++) {
 			var dish = model.getFullMenu()[i];
+
 			if(dish.type == 'starter') {
 				this.starter.attr('src', 'images/' + dish.image);
 				this.starterName.html(dish.name);
@@ -42,7 +43,6 @@ var SummaryView = function (container,model) {
 
 	this.totalCost.html(model.getTotalMenuPrice());
 	}
-	
 	/*****************************************  
 	      Observer implementation    
 	*****************************************/
