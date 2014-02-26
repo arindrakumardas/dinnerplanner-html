@@ -17,29 +17,17 @@ var SidebarViewController = function(view, model ) {
 	 // Set action form remove buttons
 	 $("#removeStarterBtn").click(function(){
 	 	$('#starterRow').hide();
-	 	//alert(view.dish);
-		 model.removeDishFromMenu(view.dish);
+		model.removeDishFromMenu(view.starter);
 	 });
 	 
 	 $("#removeMainBtn").click(function(){
 	 	$('#mainRow').hide();
-	 	//alert(view.dish);
-		 model.removeDishFromMenu(view.dish);
+		model.removeDishFromMenu(view.main);
 	 });
 	 
 	 $("#removeDessertBtn").click(function(){
 	 	$('#dessertRow').hide();
-	 	//alert(view.dish);
-		 model.removeDishFromMenu(view.dish);
+		model.removeDishFromMenu(view.dessert);
 	 });
-
-
-	 // $("#removeMainBtn").click(function(){
-	 // 	$('#mainRow').hide();
-	 // });
-
-	 // $("#removeDessertBtn").click(function(){
-	 // 	$('#dessertRow').hide();
-	 // });
 
 }
