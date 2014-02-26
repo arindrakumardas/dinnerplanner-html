@@ -64,14 +64,14 @@ var SelectDishView = function(container, model) {
 
 	var sessionlist = "";
 	for (var x = 0; x < model.getAllDishes("starter").length; x++) {
-		sessionlist += '<li style="display:inline-block;width:200px;height:200px;">' + '<div id=starter' + model.getAllDishes("starter")[x].id + '>' + '<img style="width:150px;height:150px;" src="' + 'images/' + model.getAllDishes("starter")[x].image + '" alt ="' + model.getAllDishes("starter")[x].image +
+		sessionlist += '<li id=list style="display:inline-block;width:200px;height:200px;">' + '<div id=' + model.getAllDishes("starter")[x].id + '>' + '<img style="width:150px;height:150px;" src="' + 'images/' + model.getAllDishes("starter")[x].image + '" alt ="' + model.getAllDishes("starter")[x].image +
 			'">' + '<br>' + model.getAllDishes("starter")[x].name + '</div>';
 	}
 	document.getElementById("starters").innerHTML = sessionlist;
 	sessionlist = "";
 
 	for (var x = 0; x < model.getAllDishes("main dish").length; x++) {
-		sessionlist += '<li style="display:inline-block;width:200px;height:200px;">' + '<div id=main' + model.getAllDishes("main dish")[x].id + '>'
+		sessionlist += '<li id=list style="display:inline-block;width:200px;height:200px;">' + '<div id=' + model.getAllDishes("main dish")[x].id + '>'
 
 		+ '<img style="width:150px;height:150px;" src="' + 'images/' + model.getAllDishes("main dish")[x].image + '" alt ="' + model.getAllDishes("main dish")[x].image +
 			'">' + '<br>' + model.getAllDishes("main dish")[x].name + '</div>';
@@ -81,7 +81,7 @@ var SelectDishView = function(container, model) {
 	sessionlist = "";
 
 	for (var x = 0; x < model.getAllDishes("dessert").length; x++) {
-		sessionlist += '<li style="display:inline-block;width:200px;height:200px;">' + '<div id=dessert' + model.getAllDishes("dessert")[x].id + '>'
+		sessionlist += '<li id=list style="display:inline-block;width:200px;height:200px;">' + '<div id=' + model.getAllDishes("dessert")[x].id + '>'
 
 		+ '<img style="width:150px;height:150px;" src="' + 'images/' + model.getAllDishes("dessert")[x].image + '" alt ="' + model.getAllDishes("dessert")[x].image +
 			'">' + '<br>' + model.getAllDishes("dessert")[x].name + '</div>';
@@ -91,33 +91,6 @@ var SelectDishView = function(container, model) {
 
 	document.getElementById("desserts").innerHTML = sessionlist;
 
-	for (var x = 0; x < model.getAllDishes("starter").length; x++) {
-		var idvalue = "";
-		idvalue += '#starter' + model.getAllDishes("starter")[x].id;
-		$(idvalue).click(function() {
-			$('#selectDishView').hide();
-			$('#dishDescriptionView').show();
-			model.lastClickedDishID = idvalue;
-		});
-	}
-	for (var x = 0; x < model.getAllDishes("main dish").length; x++) {
-		var idvalue = "";
-		idvalue += '#main' + model.getAllDishes("main dish")[x].id;
-		$(idvalue).click(function() {
-			$('#selectDishView').hide();
-			$('#dishDescriptionView').show();
-			model.lastClickedDishID = idvalue;
-		});
-	}
-	for (var x = 0; x < model.getAllDishes("dessert").length; x++) {
-		var idvalue = "";
-		idvalue += '#dessert' + model.getAllDishes("dessert")[x].id;
-		$(idvalue).click(function() {
-			$('#selectDishView').hide();
-			$('#dishDescriptionView').show();
-			model.lastClickedDishID = idvalue;
-		});
-	}
 
 
 	// Search functionality in the sidebar

@@ -3,11 +3,20 @@ var DinnerModel = function() {
  
 	var menu = [];
 	var numberOfGuests =3; //set default number of guests
-	var lastClickedDishID;
+	var lastClickedDishId = 1;
 	menu['starter'] = 1; //set a starter to the menu, to use for testing
 	menu['main'] = 100; //set a main to the menu, to use for testing
 	menu['dessert'] = 200; //set a dessert to the menu, to use for testing
 
+
+	this.setLastClickedDishId = function(id) {
+		lastClickedDishId = id;
+		notifyObservers();
+	}
+
+	this.getLastClickedDishId = function() {
+		return lastClickedDishId;
+	}
 
 	this.setNumberOfGuests = function(num) {
 		if(num>0) {
