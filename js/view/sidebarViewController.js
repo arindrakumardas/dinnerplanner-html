@@ -17,7 +17,8 @@ var SidebarViewController = function(view, model ) {
 	 // Set action form remove buttons
 	 $("#removeStarterBtn").click(function(){
 	 	$('#starterRow').hide();
-		 model.removeDishFromMenu(view.dish.id);
+	 	alert(view.dish);
+		 model.removeDishFromMenu(view.dish);
 	 });
 
 

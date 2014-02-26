@@ -29,7 +29,7 @@ var SidebarView = function (container,model) {
 	this.update = function(arg){
 		this.numberOfGuests.html(model.getNumberOfGuests());
 		this.totalCost.html(model.getTotalMenuPrice());
-
+		this.dish = model.getLastClickedDishId();
 		//Update the dishes
 		this.starterItem.html(model.getSelectedDish('starter'));
 		this.mainItem.html(model.getSelectedDish('main dish'));
