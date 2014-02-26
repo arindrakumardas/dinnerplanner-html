@@ -35,5 +35,7 @@ var SidebarView = function (container,model) {
 		this.mainItem.html(model.getSelectedDish('main dish'));
 		this.dessertItem.html(model.getSelectedDish('dessert'));
 	}
+
+this.update();
 }
  

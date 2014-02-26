@@ -94,6 +94,7 @@ var DinnerModel = function() {
 		if(menu[type] == id) {
 			delete menu[type];
 		}
+		notifyObservers();
 	}
 
 	//function that returns all dishes of specific type (i.e. "starter", "main dish" or "dessert")
