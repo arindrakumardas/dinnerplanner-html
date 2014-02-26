@@ -1,4 +1,3 @@
-//ExampleView Object constructor
 var SidebarView = function (container,model) {
 	
 	// Get all the relevant elements of the view (ones that show data
@@ -9,36 +8,15 @@ var SidebarView = function (container,model) {
 	this.editGuestNumber = container.find("#editGuestNumber");
 	this.div = container.find("#sidebarView");
 	this.confirmButton = container.find("#confirmButton");
-	
-	//Creating the components dynamically. Here we create the following HTML content:
-	//
-	//<div class="row">
-	//  Total menu price <span id="totalPrice"></span>
-	//</div>
-	//
-	//and add it to the the exampleView 
-	
-	//div we just store in temporary variable because we won't need it later
-	// var div = $("<div>");
-// 	//we set the constant text
-// 	div.html("Total menu price ");
-// 	//and we add the text-primary class to make it blue
-// 	div.addClass("text-primary");
-// 	//total price we store in object variable (using this) so we can access it later
-// 	this.totalPrice = $("<span>");
-// 	//we set the id of the total price span
-// 	this.totalPrice.attr("id","totalPrice");
-// 	//we add total price span to the div
-// 	div.append(this.totalPrice);
-// 	//finally we add the div to the view container
-// 	container.append(div);
-// 	
+	this.starterItem = container.find("#starterItem");
+	this.mainItem = container.find("#mainItem");
+	this.dessertItem = container.find("#dessertItem");
+	this.totalCost = container.find("#totalCost");
+
 	//Set the inital values of the components
 	this.numberOfGuests.html(model.getNumberOfGuests());
 //	this.totalPrice.html(model.getTotalMenuPrice());
-	
 
-	
 	
 	/*****************************************  
 	      Observer implementation    
@@ -50,7 +28,12 @@ var SidebarView = function (container,model) {
 	//This function gets called when there is a change at the model
 	this.update = function(arg){
 		this.numberOfGuests.html(model.getNumberOfGuests());
-		// this.totalPrice.html(model.getTotalMenuPrice());
+		this.totalCost.html(model.getTotalMenuPrice());
+
+		//Update the dishes
+		this.starterItem.html(model.getSelectedDish('starter'));
+		this.mainItem.html(model.getSelectedDish('main dish'));
+		this.dessertItem.html(model.getSelectedDish('dessert'));
 	}
 }
  

@@ -62,16 +62,24 @@
  					<th>Cost</th>
  				</thead>
  				<tbody class="table-striped">
- 					<tr>
- 						<td>Pending</td>
- 						<td>0.00</td>
-<!--  				*******************************************
-			  		 @TODO: Enter dynamic list with selections here 
-			 		 ********************************************
- -->			 		</tr>
+ 					<tr id="starterRow" style="display:none">
+ 						<td id="starterItem">Starter</td>
+ 						<td id="starterItemCost">0.00</td>
+ 						<td><button id="removeStarterBtn" class="btn btn-xs btn-danger">x</button></td>
+			 		</tr>
+ 					<tr id="mainRow" style="display:none">
+ 						<td id="mainItem">Main</td>
+ 						<td id="mainItemCost">0.00</td>
+ 						<td><button id="removeMainBtn" class="btn btn-xs btn-danger">x</button></td>
+			 		</tr>
+ 					<tr id="dessertRow" style="display:none">
+ 						<td id="dessertItem">Dessert</td>
+ 						<td id="dessertItemCost">0.00</td>
+ 						<td><button id="removeDessertBtn" class="btn btn-xs btn-danger">x</button></td>
+			 		</tr>
 			 		<tr>
 			 			<td id="total" style="text-align:right">SEK</td>
- 						<td>0.00</td>
+ 						<td id="totalCost">0.00</td>
  					</tr>
  				</tbody>
  			</table>
@@ -173,26 +181,6 @@
 					<div id="starters"></div>
 					<div id="main"></div>
 					<div id="desserts"></div>
-
-			<!-- 		<div id="images">
-						<a id="idvalue" href="#">
-					        <img id="starter" width="150px" height="150px">
-					        <div class="caption"><span id="starterName"></span></div>
-					        <div class="caption" id="description"><span id="starterDesc"></span></div>
-					    </a>
-					    <div></div>
-					    <a id="idvalue" href="#">
-					        <img id="main" width="150px" height="150px">
-					        <div class="caption"><span id="mainName"></span></div>
-					        <div class="caption" id="description"><span id="mainDesc"></span></div>
-					    </a>
-					    <div></div>
-					    <a id="idvalue" href="#">
-				        	<img id="dessert" width="150px" height="150px">
-				        	<div class="caption"><span id="dessertName"></span></div>
-					        <div class="caption" id="description"><span id="dessertDesc"></span></div>
-					    </a>
-					</div> -->
 	    		</div> 
 			</div> 
 	 	</div>
@@ -201,13 +189,15 @@
 <!-- Dish description view -->		
 <div  class="col-md-9 pre-scrollable" id="dishDescriptionView" style="display:none;">
 	<div class="col-md-3">
-		<h3 id = "dishName">LASAGNE</h3>
-		<img src="images/bakedbrie.jpg">
-		<p style="width:450px;font-size:10px;">
-			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+		<h3 id = "dishName"></h3>
+		<img id= "dishImg">
+
+		
 			<button id="backToSelectDish" class="btn btn-warning" role:"button">Back to select dish</button>
 			<h3>PREPARATION</h3>
-		</div>	
+			<p id="dishPrep"></p>
+		</div>
+			
 		<div class="col-md-offset-7">
 		<table class="table">
 		      <thead>

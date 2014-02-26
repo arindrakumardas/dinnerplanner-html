@@ -89,7 +89,7 @@ a:link{
 	padding-left:100px;	
 }
 thead {
-	text-decoration: bold;
+/*	text-decoration: bold; */
 }
 #totalCostHeader {
 	padding-top: 200px;
