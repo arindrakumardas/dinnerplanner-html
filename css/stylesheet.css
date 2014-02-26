@@ -15,11 +15,32 @@ a:link{
   	position: fixed;
   	z-index: -9999;
 }  
+.caption {
+	font-family: sans-serif;
+	font-weight: bold;
+}
+#description {
+	width: 350px;
+	font-weight: normal;
+}
+#images{
+    text-align:center;
+    margin:50px auto;
+}
+
+#images a{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+}
+#instructionsView {
+	padding-top: 20px;
+}
 .jumbotron {
 	border-radius: 10px;
 	background-color: transparent;
 	padding-left: 10%
-
 }
 .lead {
 	font-family: sans-serif;
@@ -32,6 +53,13 @@ a:link{
 	color: white;
 	opacity: 0.6;
 }
+/* this is for the accordion :
+.panel-group .panel-heading {
+	font-family: sans-serif;
+	color: white;
+	font-weight: bolder;
+	background-color: #F0AD4E;
+}	*/
 #searchbar {
 	display: block;
 	background-color: #FFFF99;
@@ -52,35 +80,17 @@ a:link{
 	font-size: 20px;
 	font-style: italic;
 }
-
+.summaryfigure img { 
+	display: inline-block; 
+	vertical-align: middle; 
+}
 .text-primary {
 	padding-left:100px;	
 }
 thead {
 	text-decoration: bold;
 }
-
-.summaryfigure img { 
-	display: inline-block; 
-	vertical-align: middle; 
-}
-
-#images{
-    text-align:center;
-    margin:50px auto;
-}
-
-#images a{
-    margin:0px 20px;
-    display:inline-block;
-    text-decoration:none;
-    color:black;
-}
-
 #totalCostHeader {
 	padding-top: 200px;
 }
 
-#instructionsView {
-	padding-top: 20px;
-}

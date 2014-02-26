@@ -101,17 +101,71 @@
 				<button class="btn btn-default"role="submit">Search</button>
 			</td>
 			<td>
-				<select class="form-control">
-                        <option>All</option>
-						<option>Starters</option>
-						<option>Main course</option>
-						<option>Desserts</option>
+				<select class="form-control" id="option">
+                        <option href="#">All</option>
+						<option href="#">Starters</option>
+						<option href="#">Main course</option>
+						<option href="#">Desserts</option>
 				</select>
 			</td>
 		</tbody>
 	</table>
 </div>
 
+<!-- *** This is an alternative view with accordion ***
+	 *** uncomment also css code, if used ***
+<div class="col-xs-6 col-sm-8" id="selectDishView" style = "display:none;" >
+	<div class="panel-group" id="accordion">
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+	          Starters
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseOne" class="panel-collapse collapse in">
+	      <div class="panel-body">
+	        <img id="starter" width="150px" height="150px">
+				<div class="caption"><span id="starterName"></span></div>
+				<div class="caption" id="description"><span id="starterDesc"></span></div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+	          Main Dishes
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseTwo" class="panel-collapse collapse">
+	      <div class="panel-body">
+	        <img id="main" width="150px" height="150px">
+				<div class="caption"><span id="mainName"></span></div>
+				<div class="caption" id="description"><span id="mainDesc"></span></div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+	          Desserts
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseThree" class="panel-collapse collapse">
+	      <div class="panel-body">
+	        <img id="dessert" width="150px" height="150px">
+				<div class="caption"><span id="dessertName"></span></div>
+				<div class="caption" id="description"><span id="dessertDesc"></span></div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>			-->
 <div id="selectDishView" style = "display:none;" >
 		<div class="container">
 						
@@ -119,20 +173,22 @@
 				<div class="centered">
 
 					<div id="images">
-						<a>
+						<a id="idvalue" href="#">
 					        <img id="starter" width="150px" height="150px">
 					        <div class="caption"><span id="starterName"></span></div>
-					        <div class="caption"><span id="starterDesc"></span></div>
+					        <div class="caption" id="description"><span id="starterDesc"></span></div>
 					    </a>
-					    <a>
+					    <div></div>
+					    <a id="idvalue" href="#">
 					        <img id="main" width="150px" height="150px">
 					        <div class="caption"><span id="mainName"></span></div>
-					        <div class="caption"><span id="mainDesc"></span></div>
+					        <div class="caption" id="description"><span id="mainDesc"></span></div>
 					    </a>
-					    <a>
+					    <div></div>
+					    <a id="idvalue" href="#">
 				        	<img id="dessert" width="150px" height="150px">
 				        	<div class="caption"><span id="dessertName"></span></div>
-					        <div class="caption"><span id="dessertDesc"></span></div>
+					        <div class="caption" id="description"><span id="dessertDesc"></span></div>
 					    </a>
 					</div>
 	    		</div> 
@@ -140,7 +196,6 @@
 
 	 	</div>
 </div>
- 		
 
 <!-- Dish description view -->		
 <div  class="col-md-9 pre-scrollable" id="dishDescriptionView" style="display:none;">
@@ -260,7 +315,7 @@
 			<div class="col-xs-4 col-sm-4">
 			</div>
 			<div class="col-xs-4 col-sm-4">
-				<button id="printRecipeBtn" class = "btn btn-warning btn-lg">Print full recipe</button>
+				<button id="printRecipeBtn" class = "btn btn-warning btn-lg btn-block">Print full recipe</button>
 			</div>
 			<div class="col-xs-4 col-sm-4">
 			</div>
