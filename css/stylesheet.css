@@ -62,7 +62,6 @@ a:link{
 }	*/
 #searchbar {
 	display: block;
-	background-color: #FFFF99;
 }
 .side-container {
 	padding: 9px 0;
@@ -75,6 +74,7 @@ a:link{
 }
 #sidebarView {
 	border-right: inset;
+	height: 50%;
 }
 .sublead {
 	font-size: 20px;
