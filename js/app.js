@@ -28,7 +28,6 @@ $(function() {
 	var numGuestsViewController = new NumGuestsViewController(numGuestsView,model);
 	//Instructions view and controller
 	var instructionsView = new InstructionsView($("#instructionsView"),model);
-	var instructionsViewController = new InstructionsViewController(instructionsView,model);
 
 	//Summary view and controller
 	var summaryView = new SummaryView($("#summaryView"),model);
